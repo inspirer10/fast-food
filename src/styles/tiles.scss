@@ -1,16 +1,77 @@
 .tiles_section {
     width: 100%;
     margin: 5vh auto;
-    background-color: royalblue;
-    .tiles_wrapper {
+    .tiles_container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         .tile {
-            width: 49.5%;
-            height: 30vh;
-            background-size: cover;
+            color: #fff;
+            height: 62.5vh;
+            width: calc(50% - 4px);
+            margin-bottom: 8px;
+            text-align: right;
+            position: relative;
+            z-index: 10;
+            .tile_bg_image {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 62.5vh;
+                z-index: 0;
+                filter: brightness(70%);
+                background-size: cover;
+                background-position: center;
+            }
+            .tile_text-wrapper {
+                position: absolute;
+                left: 5%;
+                right: 0;
+                top: 25%;
+                z-index: 10;
+                width: 50%;
+                &.left {
+                    left: 45%;
+                }
+                h2 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 4rem;
+                    line-height: calc(4rem * 1.1);
+                }
+                .description {
+                    font-family: "Montserrat", sans-serif;
+                    margin: 1.75rem 0 2rem;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: calc(1.75rem * 1.5);
+                    color: rgb(185, 185, 185);
+                }
+                .price {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 4.75rem;
+                    font-weight: 700;
+                }
+                button {
+                    margin-top: 1.5rem;
+                    background-color: transparent;
+                    border: 4px solid red;
+                    padding: 1.2rem 2.25rem;
+                    outline: none;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                    transition: .18s ease-in-out;
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+            }
+            &:nth-of-type(2n) {
+                text-align: left;
+            }
         }
     }
 }
