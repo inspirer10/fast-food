@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Header from './Components/Header';
+import MenuIntroduction from './Components/MenuIntroduction';
+import Tiles from './Components/Tiles';
 
 export default function Home() {
     return (
@@ -18,6 +20,8 @@ export default function Home() {
             </Head>
             <>
                 <Header />
+                <MenuIntroduction />
+                <Tiles />
             </>
         </>
     );

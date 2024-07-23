@@ -1,0 +1,16 @@
+.tiles_section {
+    width: 100%;
+    margin: 5vh auto;
+    background-color: royalblue;
+    .tiles_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .tile {
+            width: 49.5%;
+            height: 30vh;
+            background-size: cover;
+        }
+    }
+}

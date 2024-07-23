@@ -1,0 +1,137 @@
+.menuIntroduction_section {
+    .example_products_container {
+        background-color: #0044AE;
+        background-color: rgb(0, 60, 175);
+        margin-top: -17.5vh;
+        padding: 3vh 0 5vh;
+        height: auto;
+        z-index: 10;
+        .products_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+            margin: 0 auto;
+            .product {
+                color: #fff;
+                width: calc(90%/4);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                img {
+                    object-fit: cover;
+                    height: 15vh;
+                }
+                h6 {
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 1.75rem;
+                    font-weight: 700;
+                    letter-spacing: 0.25px;
+                    margin: 0.75rem 0;
+                }
+                p {
+                    font-family: "Montserrat", sans-serif;
+                    color: rgb(200, 200, 200);
+                    font-size: 21px;
+                    font-weight: 400;
+                    text-align: center;
+                    margin-top: 0.5rem;
+                    line-height: calc(21px * 1.4);
+                }
+            }
+        }
+    }
+    //!
+    .slogan_paragraph {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
+        padding: 0.6rem 0.3rem;
+        width: 10vw;
+        margin: 10vh auto 0;
+        text-align: center;
+        background-color: red;
+        color: #fff;
+        user-select: none;
+    }
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 6rem;
+        margin: 1rem 0;
+        color: rgb(35, 35, 35);
+        user-select: none;
+    }
+    .subheading {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.85rem;
+        color: rgb(125, 125, 125);
+        font-family: "Montserrat", sans-serif;
+    }
+    .example_products-container {
+        width: 80%;
+        margin: 0vh auto 12.5vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .product {
+            width: calc(80%/3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10vh;
+            img {
+                object-fit: cover;
+                width: 90%;
+                height: 400px;
+                object-position: center center;
+                overflow-x: visible;
+                overflow-y: visible;
+            }
+            h3 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 2rem;
+                color: rgb(35, 35, 35);
+                margin-top: 3rem;
+            }
+            .description {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1.5rem;
+                color: rgb(150, 150, 150);
+                font-weight: 400;
+                text-align: center;
+                margin-top: 0.75rem;
+                width: 80%;
+                line-height: calc(1.5rem * 1.3);
+            }
+        }
+    }
+    .view_menu {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        margin: 5vh auto;
+        border: 3px solid red;
+        background-color: transparent;
+        padding: 1.4rem 2.5rem;
+        color: red;
+        outline: none;
+        cursor: pointer;
+        transition: .175s ease-in-out;
+        &:hover {
+            background-color: red;
+            color: #fff;
+        }
+    }
+}
