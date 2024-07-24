@@ -21,7 +21,7 @@ function Tiles() {
             description:
                 'Milkshakes always taste good if you are a chocolate lover. You can throw one together with a cream or experiment with all kinds of extra flavors.',
             price: '$2.49',
-            img: '/MILKSHAKE.jpg',
+            img: '/milkshake.jpg',
         },
         {
             name: 'STANDARD BURGER MEAL',
@@ -35,7 +35,7 @@ function Tiles() {
             description:
                 'Throwing the party is never been easier. Order now and let us spice up your party. Burger meals, french fries and cheeseburgers will cheer up your friends.',
             price: '$14.99',
-            img: '/bg1.jpg',
+            img: '/burger11.jpg',
         },
         {
             name: 'HOW TO MAKE A PERFECT BURGER',

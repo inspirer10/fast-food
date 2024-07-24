@@ -95,7 +95,7 @@ function MenuIntroduction() {
                 ))}
             </article>
 
-            <button className='view_menu'>View Our Full Menu</button>
+            <button className='view_menu_button'>View Our Full Menu</button>
         </section>
     );
 }
