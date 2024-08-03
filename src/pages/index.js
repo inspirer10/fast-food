@@ -1,9 +1,25 @@
+import { useEffect } from 'react';
+import Lenis from 'lenis';
 import Head from 'next/head';
 import Header from './Components/Header';
 import MenuIntroduction from './Components/MenuIntroduction';
 import Tiles from './Components/Tiles';
+import FriesParallax from './Components/FriesParallax';
+import Footer from './Components/Footer';
+import RecomendedBurger from './Components/RecomendedBurger';
 
 export default function Home() {
+    useEffect(() => {
+        const lenis = new Lenis();
+
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+    }, []);
+
     return (
         <>
             <Head>
@@ -22,6 +38,8 @@ export default function Home() {
                 <Header />
                 <MenuIntroduction />
                 <Tiles />
+                <RecomendedBurger /> <FriesParallax />
+                <Footer />
             </>
         </>
     );

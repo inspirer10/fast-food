@@ -1,0 +1,80 @@
+.burger_recomendation-section {
+    position: relative;
+    width: 90%;
+    height: 75vh;
+    overflow: hidden; // Ukrywa zawartość poza widocznym obszarem
+    margin: 2.5vh auto 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .left_arrow,
+    .right_arrow {
+        position: absolute;
+        font-size: 4.75rem;
+        color: rgb(150, 150, 150);
+        cursor: pointer;
+        z-index: 15;
+        transition: color 0.35s ease-out;
+        &:hover {
+            color: #000;
+            transition: color 0.225s ease-in;
+        }
+    }
+    .left_arrow {
+        left: 0;
+    }
+    .right_arrow {
+        right: 0;
+    }
+    .slides_wrapper {
+        display: flex;
+        width: 300%; // 3 slajdy
+        transition: transform 0.5s ease;
+    }
+    .recomended_wrapper {
+        flex: 1 0 100%; // Każdy slajd zajmuje pełną szerokość
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.5s ease;
+        opacity: 0;
+        &.active {
+            opacity: 1;
+        }
+        img {
+            width: 30%;
+            object-fit: cover;
+        }
+        .description {
+            margin-left: 2.5rem;
+            width: 32.5%;
+            .price {
+                font-size: 1.3rem;
+                font-weight: 700;
+                letter-spacing: 0.75px;
+                padding: 0.5rem 0.9rem;
+                width: fit-content;
+                text-align: center;
+                background-color: red;
+                color: #fff;
+                user-select: none;
+            }
+            h3 {
+                width: 75%;
+                font-size: 3.6rem;
+                line-height: calc(3.6rem * 1.15);
+                color: rgb(35, 35, 35);
+                margin: 1.5rem 0 1rem;
+                letter-spacing: 0.25px;
+            }
+            .subheading {
+                font-size: 25px;
+                line-height: calc(25px * 1.45);
+                font-weight: 400;
+                letter-spacing: 0.2px;
+                font-variant: small-caps;
+                color: rgb(125, 125, 125);
+            }
+        }
+    }
+}

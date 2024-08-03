@@ -6,37 +6,37 @@ function MenuIntroduction() {
             name: 'BEEF BURGERS',
             img: 'burger1.jpg',
             description:
-                'Beetroot water spinach okra water chestnut ricebean pea.',
+                'Juicy beef, crispy bacon, cheddar cheese, fresh lettuce, and tomato.',
         },
         {
             name: 'CHICKEN BURGERS',
             img: 'burger9.jpg',
             description:
-                'Water spinach arugula pea tatsoi aubergine spring onion.',
+                'Breaded chicken filet, crispy lettuce, cucumber slices, and mayonnaise.',
         },
         {
             name: 'VEGAN OPTIONS',
             img: 'burger3.jpg',
             description:
-                'Dandelion zucchini burdock yarrow chickpea dandelion sorrel.',
+                'Vegan chickpea burger, lettuce, tomato, pickles, and mustard sauce.',
         },
         {
             name: 'FISH BURGERS',
             img: 'burger7.jpg',
             description:
-                'Water spinach arugula pea tatsoi aubergine spring onion.',
+                'White fish filet in crispy breading, lettuce, cheddar cheese, and tartar sauce.',
         },
         {
             name: 'FRENCH FRIES',
             img: 'fries.jpg',
             description:
-                'Dandelion zucchini burdock yarrow chickpea dandelion sorrel.',
+                'Golden potato fries, lightly salted and crispy on the outside.',
         },
         {
             name: 'GREAT DESSERTS',
             img: 'dessert.jpg',
             description:
-                'Chickweed okra pea winter purslane coriander yarrow sweet..',
+                'Fluffy waffles with whipped cream, bananas, and caramel sauce.',
         },
     ];
 

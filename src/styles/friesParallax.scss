@@ -1,0 +1,30 @@
+.friesParallax_section {
+    margin: 0vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: red;
+    height: 87.5vh;
+    .fries {
+        position: absolute;
+        top: 0%;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: clamp(5rem, 10vw, 10rem);
+        font-size: 8rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #fff;
+        z-index: 10;
+        user-select: none;
+        pointer-events: none;
+    }
+    img {
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+}
