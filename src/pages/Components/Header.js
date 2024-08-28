@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaRegUserCircle } from 'react-icons/fa';
+import { FiShoppingCart } from 'react-icons/fi';
+import { MdRestaurantMenu } from 'react-icons/md';
 
 function Header() {
     return (
@@ -15,8 +18,17 @@ function Header() {
                         <p>Galleries</p>
                         <p>Blog</p>
                     </div>
-                    <p>ICON</p>
+                    <div className='nav_icons-wrapper'>
+                        <FaRegUserCircle className='icon' />
+                        <MdRestaurantMenu className='icon' />
+                        <FiShoppingCart className='icon' />
+                    </div>
                 </nav>
+
+                <div className='main_description'>
+                    <p className='intro'>FAST FOOD BURGERS</p>
+                    <h2>Best burgers in galaxy</h2>
+                </div>
             </header>
         </>
     );
